@@ -147,7 +147,7 @@ Version: ${MUXEL_RPM_VERSION}
 Release: ${SPEC_RELEASE}
 Packager: Wez Furlong <wez@wezfurlong.org>
 License: MIT
-URL: https://muxel.org/
+URL: https://octotask.github.io/muxel/
 Summary: Wez's Terminal Emulator.
 %if 0%{?suse_version}
 Requires: dbus-1, fontconfig, openssl, libxcb1, libxkbcommon0, libxkbcommon-x11-0, libwayland-client0, libwayland-egl1, libwayland-cursor0, Mesa-libEGL1, libxcb-keysyms1, libxcb-ewmh2, libxcb-icccm4
@@ -272,13 +272,13 @@ Architecture: $(dpkg-architecture -q DEB_BUILD_ARCH_CPU)
 Maintainer: Wez Furlong <wez@wezfurlong.org>
 Section: utils
 Priority: optional
-Homepage: https://muxel.org/
+Homepage: https://octotask.github.io/muxel/
 Description: Wez's Terminal Emulator.
  muxel is a terminal emulator with support for modern features
  such as fonts with ligatures, hyperlinks, tabs and multiple
  windows.
 Provides: x-terminal-emulator
-Source: https://muxel.org/
+Source: https://octotask.github.io/muxel/
 EOF
 
         cat > pkg/debian/postinst <<EOF
@@ -363,7 +363,7 @@ pkgdesc="A GPU-accelerated cross-platform terminal emulator and multiplexer writ
 license="MIT"
 arch="all"
 options="!check"
-url="https://muxel.org/"
+url="https://octotask.github.io/muxel/"
 makedepends="cmd:tic"
 source="
   target/release/muxel
